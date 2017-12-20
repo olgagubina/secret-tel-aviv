@@ -78,6 +78,12 @@ section {
     width: 33.333%;
 }
 
+@media (max-width: 700px) {
+    .column {
+      width: 100%;
+    }
+}
+
 .food img {
     width: 100%;
 }
@@ -85,3 +91,54 @@ section {
 .column-inner {
     padding: 20px;
 }
+
+.column-70 {
+    width: 65%;
+    float: left;
+    height: 500px;
+    background-color:  white;
+    margin: 2%;
+
+}
+
+.column-70 img {
+    width: 100%;
+}
+  
+.column-30 {
+    width: 25%;
+    float: left;
+    height: 380px;
+    background-color: white;
+    margin: 2%;
+    font-family: "Merriweather";
+    font-size: 14px;
+}
+
+.column-30 p {
+    font-family: "Merriweather";
+    font-size: 13px;
+    margin-left: 15px;
+    margin-right: 8px;
+    text-align: inherit;
+}
+
+.column-30 h3 {
+    font-family: "Merriweather";
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.row:before {
+    display: table;
+    content: "";
+  }
+  
+  .row:after {
+    display: table;
+    content: "";
+    clear: both;
+  }
