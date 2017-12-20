@@ -49,12 +49,23 @@ nav ul {
     height: 700px;
 }
 
+.background-museums {
+    background: url('http://www.pscohen.com/images/tama_Construction_background.jpg') no-repeat center fixed;
+    background-size: cover;
+    height: 700px;
+}
+
 h1 {
     margin: 0;
     font-family: 'Roboto';
     text-align: center;
     font-weight: bold;
     padding: 25px;
+    font-size: 4vw;
+}
+
+.museums h1 {
+    padding-top: 60px;
 }
   
 h3 {
@@ -62,7 +73,7 @@ h3 {
     font-weight: bold;
     font-family: 'Roboto';
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 2.2vw;
 }
   
 section {
@@ -78,12 +89,6 @@ section {
     width: 33.333%;
 }
 
-@media (max-width: 700px) {
-    .column {
-      width: 100%;
-    }
-}
-
 .food img {
     width: 100%;
 }
@@ -95,29 +100,31 @@ section {
 .column-70 {
     width: 65%;
     float: left;
-    height: 500px;
+    height: auto;
     background-color:  white;
     margin: 2%;
-
+    margin-bottom: 0px;
 }
 
 .column-70 img {
     width: 100%;
+    display: block;
 }
   
 .column-30 {
     width: 25%;
     float: left;
-    height: 380px;
+    height: auto;
     background-color: white;
     margin: 2%;
+    margin-bottom: 0px;
     font-family: "Merriweather";
-    font-size: 14px;
+    font-size: 2.1px;
 }
 
 .column-30 p {
     font-family: "Merriweather";
-    font-size: 13px;
+    font-size: 1.9vh;
     margin-left: 15px;
     margin-right: 8px;
     text-align: inherit;
@@ -135,10 +142,26 @@ section {
 .row:before {
     display: table;
     content: "";
-  }
+}
   
   .row:after {
     display: table;
     content: "";
     clear: both;
-  }
+}
+
+@media (max-width: 700px) {
+    .column {
+      width: 100%;
+    }
+}
+
+@media (max-width: 750px) {
+    .column-70 {
+      width: 95%;
+    }
+    .column-30 {
+        width: 95%;
+    }
+}
+
